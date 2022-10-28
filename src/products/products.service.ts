@@ -56,6 +56,6 @@ export class ProductsService {
     const [_, index] = this.findProduct(prodId);
     //or
     // const index = this.findProduct(prodId)[1];
-    this.products.splice(index, 1)
+    // this.products.splice(index, 1)
   }
 }
