@@ -25,6 +25,37 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Installation With Docker
+
+
+
+```bash
+docker-compose up --build --force-recreate -detach
+```
+
+### Start db image and run prisma migrations
+```bash
+yarn db:dev:restart
+```
+
+### Prisma studio
+```bash
+npx prisma studio
+```
+
+### run app
+
+```bash
+# development
+$ yarn start:dev
+```
+
+### Start Test db image and run prisma migrations
+
+```bash
+yarn db:test:restart
+```
+### Setup Local
 
 ## Installation
 
@@ -56,6 +87,19 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
+```
+
+## Others
+
+```bash
+create controller WITH tests
+
+nest g controller auth 
+
+create controller WITHOUT tests
+
+nest g controller auth --no-spec
+
 ```
 
 ## Support
