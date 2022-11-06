@@ -15,8 +15,8 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+    it('should return "NEXT JS BOOKMARKS API!"', () => {
+      expect(appController.getHello()).toBe('NEXT JS BOOKMARKS API!');
     });
   });
 });
